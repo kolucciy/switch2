@@ -32,7 +32,6 @@ routes.forEach((route, index) => {
 
 
 fastify.setErrorHandler((error, reply) => {
-    error.message = JSON.parse(error.message);
     reply.send(error);
 });
 
