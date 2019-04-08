@@ -4,9 +4,8 @@ const moment = require('moment');
 // Get Data Models
 const Meter = require('../models/Meter')
 
-// Get switch2 helpers
-const login = require('../utils/login');
-const scrapeData = require('../utils/scrapeData');
+// Get switch2 helper
+const getData = require('../utils/getData');
 
 const standingCharge = 0.7251171875;
 const priceKwh = 0.0790196276811008;
@@ -276,10 +275,10 @@ exports.getCost = async (req, reply) => {
 
 // Get data from Switch2
 exports.updateUsageData = async (req, reply) => {
-    var customer = await login();
-    if(customer !== false) {
-        var processed = await scrapeData(customer.cookiejar);
-        return processed;
+    try {
+        const data = getData();
+        return data;
+    } catch (e) {
+        throw boom.boomify(err)
     }
-    return customer;
 }

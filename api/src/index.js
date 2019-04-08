@@ -31,9 +31,9 @@ routes.forEach((route, index) => {
 })
 
 
-fastify.setErrorHandler((error, reply) => {
+/*fastify.setErrorHandler((error, reply) => {
     reply.send(error);
-});
+});*/
 
 // Run the server!
 const start = async () => {
