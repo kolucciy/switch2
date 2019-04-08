@@ -12,6 +12,7 @@ API server is used to support Dashboard with JSON data from MongoDB.
 - Run `cd api`
 - Rename `.env.sample` to `.env` and change to your Switch2 `username` and `password`
 - Run `npm install && npm satrt` to run API server
+- Access `http://localhost:5000/api/updateusage` in your browser to get the data from Switch2 portal
 
 #### Run Usage Dashboard
 - Run `cd dashboard`
