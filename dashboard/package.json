@@ -1,0 +1,42 @@
+{
+  "name": "switch2-energy-dashboard",
+  "version": "1.0.0",
+  "description": "Switch 2 Energy Dashboard",
+  "private": true,
+  "dependencies": {
+    "asap": {},
+    "create-react-class": {},
+    "fbjs": {},
+    "fusioncharts": "^3.13.4",
+    "hoist-non-react-statics": {},
+    "invariant": {},
+    "lodash-es": {},
+    "moment": "^2.24.0",
+    "object-assign": {},
+    "process": {},
+    "prop-types": {},
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-fusioncharts": "^3.0.0",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "symbol-observable": {},
+    "uuid": {}
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
